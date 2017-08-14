@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b0bc29",
+    "navigationBarTitleText": "ELP",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#b0bc29",
+    "selectedColor": "white",
+    "color": "#131313",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "photos/home_icon_black.png",
+        "selectedIconPath": "photos/home_icon_white.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/stories/stories",
+        "iconPath": "photos/book_icon_black.png",
+        "selectedIconPath": "photos/book_icon_white.png",
+        "text": "Stories"
+      }
+    ]
+  }
+
+
+}
