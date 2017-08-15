@@ -1,0 +1,22 @@
+<view class="swiper-tab">
+<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">Teenagers</view>
+<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">Others</view>  
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+<swiper-item> 
+<view class="stories-container">
+<view class="card">
+  <image class="card_image" src="https://images.unsplash.com/photo-1434493651957-4ec11beae249?q=80&fm=jpg&s=2a7fe1a34895ea3ef01079b58482287f" bindtap="tz">
+  </image>
+  <view class="cardContent">
+    <text class="stories_title">Frankie's story</text>
+  </view>
+</view>
+
+</view>
+</swiper-item>  
+<swiper-item>  
+<view>123</view> 
+</swiper-item> 
+</swiper>
+
