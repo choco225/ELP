@@ -14,7 +14,7 @@
   margin-right: 10rpx;  
   margin-bottom: 15rpx;
   border-radius: 10rpx;
-  border-top:6px solid #347833;
+  border-top:6px solid #FFBE04;
 }
 .card .cardContent {
   position: relative;

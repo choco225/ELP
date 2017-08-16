@@ -5,11 +5,11 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
 <swiper-item> 
 <view class="stories-container">
-<view class="card">
-  <image class="card_image" src="https://images.unsplash.com/photo-1434493651957-4ec11beae249?q=80&fm=jpg&s=2a7fe1a34895ea3ef01079b58482287f" bindtap="tz">
+<view class="card" wx:for="{{textdata}}" wx:for-item="res">
+  <image class="card_image" id="{{index}}" src="https://scontent-icn1-1.xx.fbcdn.net/v/t31.0-8/17098092_10158243731785537_5789919058087111711_o.jpg?oh=52724b0a68adc1d9cef820ed0d20c523&oe=59EAA299" bindtap="tz">
   </image>
   <view class="cardContent">
-    <text class="stories_title">Frankie's story</text>
+    <text class="stories_title">{{res.title}}</text>
   </view>
 </view>
 

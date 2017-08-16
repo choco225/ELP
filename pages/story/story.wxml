@@ -1,21 +1,18 @@
-<view class="swiper-tab">
-<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">Teenagers</view>
-<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">Others</view>  
-</view>
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
-<swiper-item> 
-<view class="stories-container">
-<view class="card">
-  <image class="card_image" src="https://images.unsplash.com/photo-1434493651957-4ec11beae249?q=80&fm=jpg&s=2a7fe1a34895ea3ef01079b58482287f" bindtap="tz">
-  </image>
-  <view class="cardContent">
-    <text class="stories_title">Frankie's story</text>
+<view class="story-container">
+  <view class="card">
+    <image class="card_image" src="https://scontent-icn1-1.xx.fbcdn.net/v/t31.0-8/17098092_10158243731785537_5789919058087111711_o.jpg?oh=52724b0a68adc1d9cef820ed0d20c523&oe=59EAA299" bindtap="tz">
+    </image>
+    <view class="cardContent">
+      <text class="story_content">{{textdata.content}}</text>
+      <view class="cardFooter">
+        <image class="button_image" image src="/photos/play-button.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{textdata.links[0].nextPageId == null}}">The End</view>
+  <view wx:else>
+  <button type="primary" bindtap="A">Choice A</button>
+  <button type="primary" bindtap="B">Choice B</button>
   </view>
 </view>
-
-</view>
-</swiper-item>  
-<swiper-item>  
-<view>123</view> 
-</swiper-item> 
-</swiper>
